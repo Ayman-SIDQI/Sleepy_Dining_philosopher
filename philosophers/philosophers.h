@@ -6,7 +6,7 @@
 /*   By: asidqi <asidqi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:10:45 by asidqi            #+#    #+#             */
-/*   Updated: 2023/04/19 17:17:01 by asidqi           ###   ########.fr       */
+/*   Updated: 2023/04/19 18:47:15 by asidqi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@
 # include <unistd.h>
 # include <pthread.h>
 # include <sys/time.h>
-# include "philosophers.h"
 
 typedef struct s_general	t_general;
 

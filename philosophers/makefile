@@ -1,8 +1,20 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: asidqi <asidqi@student.1337.ma>            +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/05/07 19:19:18 by asidqi            #+#    #+#              #
+#    Updated: 2023/05/07 19:19:29 by asidqi           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME=philo
 
 CC=cc
 
-FLAGS=-Wall -Wextra -Werror #-g -fsanitize=thread
+FLAGS=-Wall -Wextra -Werror -g -fsanitize=thread
 
 SRC= errors.c \
 	func.c \
@@ -30,4 +42,4 @@ fclean :
 
 re : clean all
 
-.PHONY:all fclean clean re bonus
+.PHONY:all fclean clean re

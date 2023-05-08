@@ -6,7 +6,7 @@
 /*   By: asidqi <asidqi@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 21:44:10 by asidqi            #+#    #+#             */
-/*   Updated: 2023/04/19 15:10:59 by asidqi           ###   ########.fr       */
+/*   Updated: 2023/05/07 19:19:42 by asidqi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,8 @@ size_t	original_time(void)
 void	print_protec(t_general *all, int a, char *str)
 {
 	pthread_mutex_lock(&all->printer);
-	pthread_mutex_lock(&all->death);
 	if (all->habess)
 		printf("%lu %d %s\n", original_time() - all->start_ofprog, a, str);
-	pthread_mutex_unlock(&all->death);
 	pthread_mutex_unlock(&all->printer);
 }
 
